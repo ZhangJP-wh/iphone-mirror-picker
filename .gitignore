@@ -1,0 +1,19 @@
+# Build / local app
+*.app/
+build/
+.DerivedData/
+*.o
+*.dSYM/
+iPhone选机
+export_preview
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Local scratch / personal paths
+/tmp/
+*.log
+iphone-picker-icons/
+preview_*.png
+StatusIcon*.png
