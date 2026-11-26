@@ -27,7 +27,7 @@ enum DeviceSwitcher {
             openAccessibilitySettings()
             return SwitchResult(
                 ok: false,
-                message: "需要辅助功能权限：系统设置 → 隐私与安全 → 辅助功能 → 勾选「iPhone选机」后重试",
+                message: "需要辅助功能权限：系统设置 → 隐私与安全 → 辅助功能 → 勾选「iPhone Mirror 选机」后重试",
                 menuNames: [],
                 selected: nil
             )

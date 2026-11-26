@@ -1,4 +1,4 @@
-# iPhone选机 / iPhone Mirror Picker
+# iPhone Mirror 选机
 
 macOS 菜单栏小工具：一键打开系统「iPhone 镜像」选机页，并可选右键直切已配对的 iPhone。
 
@@ -43,8 +43,11 @@ cd ~/Downloads/iphone-mirror-picker-main
 bash scripts/build-and-install.sh
 ```
 
-4. 看菜单栏是否出现双机图标；没有就打开 `~/Applications/iPhone选机.app`  
-   Check the menu bar for the dual-phone icon; if missing, open `~/Applications/iPhone选机.app`
+4. 看菜单栏是否出现双机图标；没有就打开 `~/Applications/iPhone Mirror 选机.app`  
+   Check the menu bar for the dual-phone icon; if missing, open `~/Applications/iPhone Mirror 选机.app`
+
+若以前装过旧名称的应用，再运行一次上面的命令即可：脚本会退出并删掉 `~/Applications/iPhone选机.app`，只留下「iPhone Mirror 选机」。  
+If an older copy is installed, run the same command again. The script removes `~/Applications/iPhone选机.app` and leaves 「iPhone Mirror 选机」.
 
 需要 **Xcode 命令行工具**（有 `swiftc`）。若提示未安装，按系统弹窗安装即可。
 
@@ -56,14 +59,14 @@ bash scripts/build-and-install.sh
 Please install this macOS menu-bar app for me from:
 https://github.com/ZhangJP-wh/iphone-mirror-picker
 
-Goal: build and install 「iPhone选机」 so I get a menu-bar icon.
+Goal: build and install 「iPhone Mirror 选机」 so I get a menu-bar icon.
 
 Steps (do them for me on my Mac):
 1. Download the repo ZIP from GitHub (Code → Download ZIP), or clone the repo.
 2. Unzip if needed. The folder must contain scripts/build-and-install.sh and src/.
 3. Run: bash scripts/build-and-install.sh
-4. Confirm ~/Applications/iPhone选机.app launched and a dual-phone icon is in the menu bar.
-5. Remind me: left-click opens the iPhone picker settings page; right-click lists phones (needs Accessibility: System Settings → Privacy & Security → Accessibility → enable 「iPhone选机」).
+4. Confirm "~/Applications/iPhone Mirror 选机.app" launched and a dual-phone icon is in the menu bar.
+5. Remind me: left-click opens the iPhone picker settings page; right-click lists phones (needs Accessibility: System Settings → Privacy & Security → Accessibility → enable 「iPhone Mirror 选机」).
 6. Do not rewrite the code unless install fails. Prefer ZIP for non-technical users.
 When done, tell me briefly that it is installed and how left/right click work.
 ```
@@ -78,7 +81,7 @@ Full agent steps: [`AGENT_INSTALL.md`](./AGENT_INSTALL.md).
 右键**自动切换**需要 **辅助功能**：
 
 1. 系统设置 → 隐私与安全 → 辅助功能  
-2. 勾选「iPhone选机」  
+2. 勾选「iPhone Mirror 选机」  
 3. 刚安装/更新后若无效：先退出再打开本应用，再勾一次  
 
 没有辅助功能时，**左键打开选机页**仍然可用。
@@ -108,7 +111,7 @@ bash scripts/build-and-install.sh
 ```bash
 cd src
 swiftc -O -framework AppKit -framework ApplicationServices \
-  -o "iPhone选机" AppMain.swift Icon.swift DeviceDiscovery.swift DeviceSwitcher.swift
+  -o "iPhone Mirror 选机" AppMain.swift Icon.swift DeviceDiscovery.swift DeviceSwitcher.swift
 ```
 
 合成图标预览（可选）：

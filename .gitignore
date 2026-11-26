@@ -4,7 +4,9 @@ build/
 .DerivedData/
 *.o
 *.dSYM/
+# Compiled binaries (current name, and the previous executable name)
 iPhone选机
+iPhone Mirror 选机
 export_preview
 
 # macOS
